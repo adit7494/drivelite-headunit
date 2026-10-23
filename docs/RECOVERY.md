@@ -31,7 +31,7 @@ Hasil berbentuk `nama.paket/NamaActivity`. Gunakan nilai perangkat Anda, bukan n
 .\scripts\Restore-Home.ps1 -Serial '192.168.1.50:5555' -Component 'nama.paket/NamaActivity'
 ```
 
-Jika launcher OEM pernah dihapus/disabled oleh alat lain, memilih HOME saja tidak memulihkannya. Pulihkan paket tersebut berdasarkan catatan debloat perangkat Anda terlebih dahulu. Proyek ini tidak menjalankan daftar debloat umum karena layanan radio, Bluetooth, kamera mundur, dan tombol setir berbeda antar-ROM.
+Jika launcher OEM pernah dihapus/disabled oleh alat lain, memilih HOME saja tidak memulihkannya. Pulihkan paket tersebut berdasarkan catatan debloat perangkat Anda terlebih dahulu. Cara memulihkan paket yang dinonaktifkan atau dilepas untuk user 0 tersedia di [pemulihan debloat](DEBLOAT.md#8-pemulihan). Proyek ini tidak menjalankan daftar debloat umum karena layanan radio, Bluetooth, kamera mundur, dan tombol setir berbeda antar-ROM.
 
 ## Menghapus DriveLite
 

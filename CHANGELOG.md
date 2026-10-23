@@ -1,5 +1,10 @@
 # Changelog
 
+## Belum dirilis
+
+- Panduan debloat ADB bertahap: inventaris awal, kandidat aplikasi beserta dampak, disable/uninstall untuk user 0, optimasi animasi, dan pemulihan.
+- Ringkasan perubahan TS7 dari catatan lokal, tanpa mengunggah identitas perangkat atau log mentah.
+
 ## 2.2.0 — 24 Oktober 2026
 
 Publikasi source dan paket demo; versi aplikasi Android tetap 2.2/versionCode 4.

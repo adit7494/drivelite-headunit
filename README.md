@@ -5,7 +5,7 @@
 
 Launcher Android native yang ringan untuk head unit mobil, dengan tampilan terinspirasi navigasi konsol: kartu favorit, wallpaper crossfade, jam, dan informasi kecepatan GPS.
 
-**[Unduh APK demo](https://github.com/adit7494/drivelite-headunit/releases/latest) · [Panduan pemasangan](docs/INSTALL.md) · [Build sendiri](docs/BUILD.md) · [Pemulihan](docs/RECOVERY.md)**
+**[Unduh APK demo](https://github.com/adit7494/drivelite-headunit/releases/latest) · [Panduan pemasangan](docs/INSTALL.md) · [Debloat](docs/DEBLOAT.md) · [Build sendiri](docs/BUILD.md) · [Pemulihan](docs/RECOVERY.md)**
 
 ![Beranda DriveLite](docs/images/home.png)
 
@@ -26,6 +26,8 @@ Launcher Android native yang ringan untuk head unit mobil, dengan tampilan terin
 | Tujuan | Panduan |
 | --- | --- |
 | Memasang APK lewat flashdisk atau ADB Wi-Fi | [INSTALL.md](docs/INSTALL.md) |
+| Debloat bertahap, daftar aplikasi, dan cara mengembalikan | [DEBLOAT.md](docs/DEBLOAT.md) |
+| Melihat perubahan dan snapshot memori TS7 pengembang | [DEBLOAT-TS7.md](docs/DEBLOAT-TS7.md) |
 | Mengatur favorit, wallpaper, dan memahami GPS | [USAGE.md](docs/USAGE.md) |
 | Build demo atau artwork game opsional | [BUILD.md](docs/BUILD.md) |
 | Kembali ke launcher bawaan | [RECOVERY.md](docs/RECOVERY.md) |
@@ -75,7 +77,7 @@ Baca [NOTICE.md](NOTICE.md) untuk batas lisensi artwork. Build menggunakan keyst
 
 Manifest mengizinkan API 21+, tetapi pengujian fisik dilakukan pada perangkat di atas. Uji pratinjau sebelum mengganti HOME default pada ROM lain. GPS berasal dari Android, bukan CAN/ECU atau status mesin. Boot/sleep-wake, kamera mundur, radio, dan tombol setir perlu diuji pada kendaraan masing-masing.
 
-Installer tidak menghapus launcher OEM, tidak melakukan debloat otomatis, dan tidak memodifikasi MCU/firmware. [Catat HOME lama sebelum menggantinya](docs/RECOVERY.md).
+Installer tidak menghapus launcher OEM, tidak melakukan debloat otomatis, dan tidak memodifikasi MCU/firmware. [Catat HOME lama sebelum menggantinya](docs/RECOVERY.md). Debloat melalui ADB dibahas dalam [panduan terpisah](docs/DEBLOAT.md), termasuk dampak tiap aplikasi, pencatatan status awal, dan pemulihan.
 
 ## Pengujian dan kontribusi
 

@@ -14,7 +14,7 @@ adb shell getprop ro.build.version.sdk
 adb shell wm size
 ```
 
-Pemasangan ini tidak memerlukan root, perubahan MCU, atau penghapusan launcher bawaan.
+Pemasangan ini tidak memerlukan root, perubahan MCU, atau penghapusan launcher bawaan. Untuk mengurangi aplikasi bawaan, ikuti [panduan debloat ADB](DEBLOAT.md) secara terpisah; APK DriveLite tidak menjalankan debloat.
 
 ## 2. Pilih APK
 
