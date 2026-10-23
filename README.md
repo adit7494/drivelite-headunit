@@ -1,5 +1,9 @@
 # DriveLite Headunit
 
+[![Build and test](https://github.com/adit7494/drivelite-headunit/actions/workflows/build.yml/badge.svg)](https://github.com/adit7494/drivelite-headunit/actions/workflows/build.yml)
+[![Tested: TS7 / Android 8.1](https://img.shields.io/badge/tested-TS7%20%2F%20Android%208.1-green)](#tested--perangkat-yang-diuji)
+[![License: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
+
 HU terasa berat? Rapikan aplikasi bawaan dan gunakan launcher ringan dengan favorit, wallpaper, jam, serta kecepatan GPS. **AI mengurus setup PC, build, dan pemasangan.**
 
 ![Tampilan DriveLite di head unit](docs/images/home.png)
@@ -78,6 +82,43 @@ AI akan menanyakan IP HU, memeriksa aplikasi, dan menanyakan fitur yang kalian g
 
 Selanjutnya AI menyiapkan semua alat, membangun launcher, memasangnya melalui Wi-Fi, dan memandu pengujian. **Kalian tidak perlu memasang SDK, menjalankan build, atau menyalin APK launcher sendiri.** Launcher bawaan disimpan untuk pemulihan.
 
+## Fitur utama
+
+- Beranda berisi aplikasi favorit; tekan tahan untuk mengatur favorit dan membuka menu aplikasi.
+- 25 slot cover berbeda, wallpaper dengan transisi halus, serta navigasi kiri/kanan dan Enter.
+- Jam, pencarian, dan pengaturan di kanan atas.
+- Kecepatan GPS di kanan bawah, indikator terhubung hijau/merah, dan filter gerakan kecil 1–2 km/h menjadi 0.
+- Launcher Android native tanpa WebView, iklan, atau izin internet; GPS aktif saat beranda terlihat.
+
+## Tested / perangkat yang diuji
+
+Pengujian fisik dilakukan pada HU TS7 pengembang berikut:
+
+| Bagian | Perangkat pengujian |
+| --- | --- |
+| Platform | TS7 / `sp7731e_1h10_native` |
+| Android sebenarnya | **8.1.0 / API 27**, diperiksa melalui ADB |
+| CPU / ABI | ARMv7 / `armeabi-v7a` |
+| RAM yang terbaca Android | Sekitar **1 GiB** |
+| Layar | **1024 × 600**, landscape |
+| Versi launcher | **2.2**, versionCode **4** |
+| Setup dan build PC | Windows x64; build juga diperiksa oleh GitHub Actions |
+
+Minimum aplikasi adalah Android **5.0/API 21**, tetapi pengujian fisik baru pada TS7 di atas. Versi Android/RAM pada menu About dapat berbeda dari yang dibaca sistem. ROM lain perlu diperiksa AI dan diuji lewat pratinjau; radio, Bluetooth, kamera mundur, tombol setir, GPS, serta boot/sleep-wake tetap diuji pada kendaraan masing-masing.
+
+## Hasil pengujian
+
+| Pemeriksaan | Hasil |
+| --- | --- |
+| Build APK demo, tanda tangan, dan zip alignment | Lulus di GitHub Actions |
+| Pembagian cover, kestabilan mapping, dan filter drift GPS | **14 pemeriksaan logika lulus** |
+| Collector inventaris dengan ADB simulasi | Lulus: status aplikasi, perangkat belum diotorisasi, pembacaan gagal, dan hanya menjalankan perintah baca |
+| Tampilan launcher pada HU TS7 | Screenshot beranda, daftar aplikasi, dan menu aplikasi tersedia di halaman ini |
+
+Lihat [hasil pemeriksaan otomatis](https://github.com/adit7494/drivelite-headunit/actions/workflows/build.yml). Tes otomatis tidak menggantikan pengujian fungsi kendaraan.
+
+Pada debloat awal unit pengembang, jumlah paket terpasang berubah **90 → 80** dan snapshot Used RAM **685,3 → 542,7 MiB**. Angka memori ini pengamatan sesaat, bukan benchmark FPS atau jaminan penghematan pada HU lain. Detailnya ada di [catatan hasil debloat TS7](docs/DEBLOAT-TS7.md).
+
 ---
 
 <details>
@@ -96,7 +137,6 @@ Selanjutnya AI menyiapkan semua alat, membangun launcher, memasangnya melalui Wi
 - [Perintah debloat](docs/DEBLOAT-MANUAL.md) · [Catatan hasil TS7](docs/DEBLOAT-TS7.md).
 - [Setup/pemasangan teknis](docs/INSTALL.md) · [Build/artwork](docs/BUILD.md) · [Instruksi AI](AGENTS.md).
 - [APK demo](https://github.com/adit7494/drivelite-headunit/releases/latest) · [GitHub Actions](https://github.com/adit7494/drivelite-headunit/actions) · [Kontribusi](CONTRIBUTING.md) · [Mengelola rilis](docs/MAINTAINING.md).
-- Perangkat yang diuji: TS7, Android 8.1/API 27, ARMv7, 1024 × 600. Angka versi Android pada menu HU dapat berbeda; AI memeriksa versi sebenarnya melalui ADB.
 - Kode menu dan metode Wi-Fi TS7: [laporan pemilik perangkat](https://4pda.to/forum/index.php?showtopic=1028320&st=2480), [contoh koneksi](https://4pda.to/forum/index.php?showtopic=1028320&st=500).
 
 </details>

@@ -2,6 +2,7 @@
 
 ## Belum dirilis
 
+- README kembali memuat badge build/tested/lisensi, fitur, spesifikasi HU pengujian, hasil tes otomatis, ringkasan debloat, dan batas kompatibilitas di bawah panduan awal.
 - Panduan utama dirombak menjadi urutan cek HU → Developer options → USB debugging → Wi-Fi → Terminal → pilihan AI → file prompt. Build/pemasangan ditangani AI, tanpa formulir aplikasi di awal.
 - File MULAI-DENGAN-AI.txt siap salin untuk Claude, ChatGPT/Codex, dan Antigravity pada PC lokal.
 - Alur utama setup/debloat dengan AI, prompt siap salin, kode menu TS7, dan contoh dialog USB debugging; referensi perintah manual dipisahkan.
