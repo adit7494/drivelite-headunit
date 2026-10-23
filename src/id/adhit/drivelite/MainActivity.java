@@ -332,7 +332,7 @@ public final class MainActivity extends Activity {
         final FrameLayout card=favoriteCards.get(index);
         card.post(()->stripScroll.smoothScrollTo(Math.max(0,card.getLeft()-px(300)),0));
     }
-    private void updateArtTitle() { if(artTitle!=null) artTitle.setText(Artwork.TITLES[activeArt<0?0:activeArt]+"  •  "+((activeArt<0?0:activeArt)+1)+" / "+Artwork.KEYS.length); }
+    private void updateArtTitle() { if(artTitle!=null) artTitle.setText((art.isDemo()?"DriveLite Demo":Artwork.TITLES[activeArt<0?0:activeArt])+"  •  "+((activeArt<0?0:activeArt)+1)+" / "+Artwork.KEYS.length); }
     private void scheduleSlideshow() {
         handler.removeCallbacks(slideshow);
         if(resumed && !inLibrary && !popupOpen && prefs.getBoolean("slideshow",true)) handler.postDelayed(slideshow,25000);
@@ -412,7 +412,7 @@ public final class MainActivity extends Activity {
     }
     private void about() {
         AlertDialog dialog=new AlertDialog.Builder(this,android.R.style.Theme_Material_Dialog_Alert).setTitle("DriveLite 2.2")
-            .setMessage("Launcher native untuk head unit Anda.\n\nKecepatan berasal dari GPS dan tersedia setelah sinyal terkunci. Sentuh angka kecepatan untuk membuka pengaturan lokasi.\n\nSentuh kartu untuk memilih, lalu Buka untuk menjalankan. Tekan tahan aplikasi untuk mengatur favorit.\n\nArtwork game tersimpan offline. Sumber: PlayStation dan aset penerbit di Steam. Hak gambar milik pemilik masing-masing.")
+            .setMessage("Launcher native untuk head unit Anda.\n\nKecepatan berasal dari GPS dan tersedia setelah sinyal terkunci. Sentuh angka kecepatan untuk membuka pengaturan lokasi.\n\nSentuh kartu untuk memilih, lalu Buka untuk menjalankan. Tekan tahan aplikasi untuk mengatur favorit.\n\n"+(art.isDemo()?"Build demo dengan artwork geometris buatan proyek; gambar game tidak disertakan.":"Artwork game tersimpan offline. Sumber: PlayStation dan aset penerbit di Steam. Hak gambar milik pemilik masing-masing."))
             .setPositiveButton("Tutup",null).show(); styleDialog(dialog);
     }
     private void styleDialog(AlertDialog d) { if(d.getWindow()!=null) { d.getWindow().setBackgroundDrawable(rounded(0xFF17212C,18,0x30B2C5DD,1)); d.getWindow().setDimAmount(.65f); } }

@@ -16,13 +16,21 @@ final class Artwork {
     static final String[] KEYS = {"witcher", "ghost", "horizon", "stray", "cyberpunk", "eldenring", "reddead", "godofwar", "ragnarok", "hogwarts", "spiderman", "milesmorales", "lastofus", "uncharted", "residentevil4", "residentevil2", "sekiro", "darksouls3", "doom", "gta5", "forza5", "nier", "hades", "hollowknight", "deathstranding"};
     static final String[] TITLES = {"The Witcher 3: Wild Hunt", "Ghost of Tsushima", "Horizon Forbidden West", "Stray", "Cyberpunk 2077", "ELDEN RING", "Red Dead Redemption 2", "God of War", "God of War Ragnarok", "Hogwarts Legacy", "Marvels Spider-Man Remastered", "Spider-Man Miles Morales", "The Last of Us Part I", "UNCHARTED Legacy of Thieves", "Resident Evil 4", "Resident Evil 2", "Sekiro Shadows Die Twice", "Dark Souls III", "DOOM Eternal", "Grand Theft Auto V", "Forza Horizon 5", "NieR Automata", "Hades", "Hollow Knight", "Death Stranding Directors Cut"};
     private final Context context;
+    private final boolean demo;
     private final Handler main = new Handler(Looper.getMainLooper());
     private final ExecutorService worker = Executors.newSingleThreadExecutor();
     private final Bitmap[] covers = new Bitmap[KEYS.length];
     private boolean closed;
     Runnable coversReady;
 
-    Artwork(Context c) { context = c.getApplicationContext(); }
+    Artwork(Context c) {
+        context = c.getApplicationContext();
+        boolean found;
+        try(InputStream marker=context.getAssets().open("demo-artwork.json")) { found=true; }
+        catch(java.io.IOException absent) { found=false; }
+        demo=found;
+    }
+    boolean isDemo() { return demo; }
 
     void loadCovers() {
         worker.execute(() -> {
