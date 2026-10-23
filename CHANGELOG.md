@@ -2,6 +2,9 @@
 
 ## Belum dirilis
 
+- Alur utama setup/debloat dengan AI, prompt siap salin, kode menu TS7, dan contoh dialog USB debugging; referensi perintah manual dipisahkan.
+- AGENTS.md memandu audit aplikasi berbasis data, rekomendasi beserta dampak, dan pilihan pengguna sebelum perubahan.
+- Collector inventaris baca-saja untuk AI, dengan status pembacaan serta hasil lokal yang diabaikan Git.
 - Panduan debloat ADB bertahap: inventaris awal, kandidat aplikasi beserta dampak, disable/uninstall untuk user 0, optimasi animasi, dan pemulihan.
 - Ringkasan perubahan TS7 dari catatan lokal, tanpa mengunggah identitas perangkat atau log mentah.
 

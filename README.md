@@ -5,7 +5,13 @@
 
 Launcher Android native yang ringan untuk head unit mobil, dengan tampilan terinspirasi navigasi konsol: kartu favorit, wallpaper crossfade, jam, dan informasi kecepatan GPS.
 
-**[Unduh APK demo](https://github.com/adit7494/drivelite-headunit/releases/latest) · [Panduan pemasangan](docs/INSTALL.md) · [Debloat](docs/DEBLOAT.md) · [Build sendiri](docs/BUILD.md) · [Pemulihan](docs/RECOVERY.md)**
+**[Mulai dengan AI: setup dan debloat](docs/DEBLOAT.md) · [Unduh APK demo](https://github.com/adit7494/drivelite-headunit/releases/latest) · [Panduan pemasangan](docs/INSTALL.md) · [Build sendiri](docs/BUILD.md) · [Pemulihan](docs/RECOVERY.md)**
+
+## Cara termudah: minta AI menyiapkan proyek
+
+1. Buka AI yang bisa membaca folder dan menjalankan terminal di PC Windows.
+2. Ikuti [5 langkah setup dengan AI](docs/DEBLOAT.md): kode Developer options/USB debugging TS7, sambungan Wi-Fi, dan **prompt siap salin**.
+3. AI menyiapkan ADB, membaca aplikasi, lalu memberi rekomendasi beserta dampaknya. **Anda memilih paket dan tindakan sebelum AI mengubahnya.** Pemasangan DriveLite juga dapat dibantu AI.
 
 ![Beranda DriveLite](docs/images/home.png)
 
@@ -26,7 +32,8 @@ Launcher Android native yang ringan untuk head unit mobil, dengan tampilan terin
 | Tujuan | Panduan |
 | --- | --- |
 | Memasang APK lewat flashdisk atau ADB Wi-Fi | [INSTALL.md](docs/INSTALL.md) |
-| Debloat bertahap, daftar aplikasi, dan cara mengembalikan | [DEBLOAT.md](docs/DEBLOAT.md) |
+| Setup/debloat dengan AI, kode TS7, dan prompt siap salin | [DEBLOAT.md](docs/DEBLOAT.md) |
+| Referensi perintah ADB dan pemulihan debloat | [DEBLOAT-MANUAL.md](docs/DEBLOAT-MANUAL.md) |
 | Melihat perubahan dan snapshot memori TS7 pengembang | [DEBLOAT-TS7.md](docs/DEBLOAT-TS7.md) |
 | Mengatur favorit, wallpaper, dan memahami GPS | [USAGE.md](docs/USAGE.md) |
 | Build demo atau artwork game opsional | [BUILD.md](docs/BUILD.md) |
@@ -81,7 +88,7 @@ Installer tidak menghapus launcher OEM, tidak melakukan debloat otomatis, dan ti
 
 ## Pengujian dan kontribusi
 
-GitHub Actions membangun APK demo, memverifikasi tanda tangan serta zip alignment, dan menjalankan 14 pemeriksaan pembagian cover/filter GPS. Pengujian UI pada head unit dicatat terpisah dan tidak dijalankan oleh CI.
+GitHub Actions membangun APK demo, memverifikasi tanda tangan serta zip alignment, menjalankan 14 pemeriksaan pembagian cover/filter GPS, dan menguji collector inventaris dengan ADB simulasi. Tes collector mencakup perangkat belum diotorisasi, kegagalan inventaris, serta pembacaan tambahan yang tidak didukung. Pengujian UI pada head unit dicatat terpisah dan tidak dijalankan oleh CI.
 
 Perbaikan dan laporan perangkat lain diterima melalui issue/PR. Ikuti [CONTRIBUTING.md](CONTRIBUTING.md), dan hapus data pribadi dari log atau screenshot sebelum mengunggahnya.
 

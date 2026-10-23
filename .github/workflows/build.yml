@@ -25,6 +25,9 @@ jobs:
       - name: Test cover allocation and GPS filtering
         shell: pwsh
         run: ./test.ps1
+      - name: Test read-only headunit collector without a device
+        shell: pwsh
+        run: ./tests/Inspect-Headunit.Tests.ps1
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: DriveLite-demo-${{ github.sha }}

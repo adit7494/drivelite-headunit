@@ -2,6 +2,8 @@
 
 [Kembali ke README](../README.md) · [Jika perlu kembali ke launcher lama](RECOVERY.md)
 
+Ingin PC dikerjakan oleh AI? Mulai dari [panduan setup dengan AI dan prompt siap salin](DEBLOAT.md). Dokumen ini menjadi referensi perintah bagi AI atau pengguna yang memilih pemasangan manual.
+
 ## 1. Periksa perangkat
 
 DriveLite diuji pada TS7, Android **8.1/API 27**, ARMv7, layar **1024 × 600 landscape**. Minimum manifest API 21; ROM/perangkat lain belum diuji. Versi Android yang ditampilkan menu head unit kadang berbeda dari properti sistem.
@@ -87,7 +89,7 @@ Pada TS7 yang dipakai pengembang, firmware juga menerima perintah ini di aplikas
 setprop persist.wifi.debug 1
 ```
 
-Ini cara khusus firmware, bukan perintah universal Android. Jangan menjalankannya di PowerShell PC. Jika muncul `Permission denied`/gagal mengubah properti, pakai metode yang didukung perangkat tersebut. Password developer/debugging juga bergantung pada vendor; tanyakan penjual, bukan menebak kode universal.
+Ini cara khusus firmware, bukan perintah universal Android. Jangan menjalankannya di PowerShell PC. Jika muncul `Permission denied`/gagal mengubah properti, pakai metode yang didukung perangkat tersebut. Kode TS7 yang dipakai dalam alur proyek ini: **Developer options `7890HH`** (jam di layar head unit, dua digit/24 jam, tanpa menit; 18:45 → `789018`) dan **USB debugging `john@tw-desktop`** (huruf kecil). Kode tidak universal; lihat [contoh dialog dan sumbernya](DEBLOAT.md#2-aktifkan-debugging-pada-head-unit). Jika ditolak, minta kode sesuai firmware kepada penjual.
 
 Setujui **Allow USB debugging** pada head unit. Lanjutkan setelah `adb devices -l` menampilkan status `device`, bukan `unauthorized`.
 

@@ -4,6 +4,7 @@
 2. Untuk bug, sertakan versi Android dari `getprop`, resolusi, versi DriveLite, langkah reproduksi, dan screenshot yang sudah dibersihkan dari data pribadi.
 3. Buat branch perubahan dari `main`.
 4. Jalankan `build.ps1 -Artwork Demo` dan `test.ps1` di Windows.
+   Untuk perubahan collector ADB, jalankan juga `tests/Inspect-Headunit.Tests.ps1`; tes ini memakai ADB simulasi tanpa menyambung perangkat.
 5. Jika mengubah UI, periksa screenshot beranda dan semua aplikasi. Jika mengubah GPS, periksa keadaan tanpa fix serta filter drift.
 6. Kirim PR berisi masalah, perilaku sesudah perubahan, dan pemeriksaan yang dilakukan.
 

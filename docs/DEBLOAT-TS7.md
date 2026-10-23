@@ -11,7 +11,7 @@ Android sebenarnya **8.1/API 27**, ARMv7, layar 1024 × 600. Android melihat RAM
 | Tahap | Perubahan yang tercatat |
 | --- | --- |
 | Awal | 90 paket terpasang untuk user 0. Play Store, Play Services, dan Google WebView sudah nonaktif. Chrome adalah WebView aktif. |
-| Debloat aplikasi opsional | Sembilan paket pada [tabel panduan](DEBLOAT.md#3-pilih-aplikasi-yang-tidak-digunakan) dilepas dengan `pm uninstall -k --user 0`. Data diminta tetap disimpan. |
+| Debloat aplikasi opsional | Sembilan paket pada [tabel panduan](DEBLOAT-MANUAL.md#3-pilih-aplikasi-yang-tidak-digunakan) dilepas dengan `pm uninstall -k --user 0`. Data diminta tetap disimpan. |
 | Temuan keamanan | `com.tw.jar1` dihentikan dan di-uninstall untuk user 0 tanpa mempertahankan datanya. `com.tw.core` dinonaktifkan. |
 | Sesudah tahap awal | 80 paket terpasang; 22 paket dalam daftar perlindungan tetap terpasang/enabled. HOME masih launcher DoFun dan WebView masih Chrome. |
 | Optimasi berikutnya | Tiga skala animasi diubah menjadi 0,5. FOTA `com.abupdate.fota_demo_iot` dan Carrier Services `com.google.android.ims` dinonaktifkan. Jumlah paket terpasang tetap 80. |
