@@ -1,0 +1,23 @@
+# Generated files, personal keys, third-party artwork, local tools
+/build/
+/output/
+/.tools/
+/signing/
+/runs/
+/artwork-source/
+/assets/covers/
+/assets/wallpapers/
+*.apk
+*.idsig
+*.jks
+*.keystore
+*.p12
+*.pfx
+.env
+.env.*
+local.properties
+*.log
+Thumbs.db
+.DS_Store
+/.idea/
+/.vscode/

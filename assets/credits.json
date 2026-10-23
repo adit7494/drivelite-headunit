@@ -1,0 +1,585 @@
+{
+  "downloaded": "2026-10-22T22:07:28.2346298+07:00",
+  "usage": "Personal offline launcher; artwork copyright belongs to the respective publishers.",
+  "wallpapers": [
+    {
+      "title": "The Witcher 3: Wild Hunt",
+      "file": "witcher.jpg",
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292030/library_hero.jpg",
+      "page": "https://store.steampowered.com/app/292030/"
+    },
+    {
+      "title": "Ghost of Tsushima",
+      "file": "ghost.jpg",
+      "url": "https://gmedia.playstation.com/is/image/SIEPDC/playstation-wallpapers_ghost-of-tsushima-keyart-4K-01-ps4-26jun20-en-us?wid=1280&fmt=jpeg&qlt=88",
+      "page": "https://www.playstation.com/en-us/wallpapers/"
+    },
+    {
+      "title": "Horizon Forbidden West",
+      "file": "horizon.jpg",
+      "url": "https://gmedia.playstation.com/is/image/SIEPDC/horizon-forbidden-west-secondary-keyart-3840x2160-desktop-en-04feb22?wid=1280&fmt=jpeg&qlt=88",
+      "page": "https://www.playstation.com/en-us/wallpapers/"
+    },
+    {
+      "title": "Stray",
+      "file": "stray.jpg",
+      "url": "https://www.playstation.com/content/dam/global_pdc/de-de/games/wallpapers/Stray-1-de-1920x1080-11jul22.jpg",
+      "page": "https://www.playstation.com/en-us/wallpapers/"
+    },
+    {
+      "title": "Cyberpunk 2077",
+      "file": "cyberpunk.jpg",
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091500/library_hero.jpg",
+      "page": "https://store.steampowered.com/app/1091500/"
+    },
+    {
+      "file": "eldenring.jpg",
+      "title": "ELDEN RING",
+      "page": "https://store.steampowered.com/app/1245620/",
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1245620/library_hero.jpg"
+    },
+    {
+      "file": "reddead.jpg",
+      "title": "Red Dead Redemption 2",
+      "page": "https://store.steampowered.com/app/1174180/",
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1174180/library_hero.jpg"
+    },
+    {
+      "file": "godofwar.jpg",
+      "title": "God of War",
+      "page": "https://store.steampowered.com/app/1593500/",
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1593500/library_hero.jpg"
+    },
+    {
+      "file": "ragnarok.jpg",
+      "title": "God of War Ragnarok",
+      "page": "https://store.steampowered.com/app/2322010/",
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2322010/library_hero.jpg"
+    },
+    {
+      "file": "hogwarts.jpg",
+      "title": "Hogwarts Legacy",
+      "page": "https://store.steampowered.com/app/990080/",
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/990080/library_hero.jpg"
+    },
+    {
+      "file": "spiderman.jpg",
+      "title": "Marvels Spider-Man Remastered",
+      "page": "https://store.steampowered.com/app/1817070/",
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1817070/library_hero.jpg"
+    },
+    {
+      "file": "milesmorales.jpg",
+      "title": "Spider-Man Miles Morales",
+      "page": "https://store.steampowered.com/app/1817190/",
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1817190/library_hero.jpg"
+    },
+    {
+      "file": "lastofus.jpg",
+      "title": "The Last of Us Part I",
+      "page": "https://store.steampowered.com/app/1888930/",
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1888930/library_hero.jpg"
+    },
+    {
+      "file": "uncharted.jpg",
+      "title": "UNCHARTED Legacy of Thieves",
+      "page": "https://store.steampowered.com/app/1659420/",
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1659420/library_hero.jpg"
+    },
+    {
+      "file": "residentevil4.jpg",
+      "title": "Resident Evil 4",
+      "page": "https://store.steampowered.com/app/2050650/",
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2050650/library_hero.jpg"
+    },
+    {
+      "file": "residentevil2.jpg",
+      "title": "Resident Evil 2",
+      "page": "https://store.steampowered.com/app/883710/",
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/883710/library_hero.jpg"
+    },
+    {
+      "file": "sekiro.jpg",
+      "title": "Sekiro Shadows Die Twice",
+      "page": "https://store.steampowered.com/app/814380/",
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/814380/library_hero.jpg"
+    },
+    {
+      "file": "darksouls3.jpg",
+      "title": "Dark Souls III",
+      "page": "https://store.steampowered.com/app/374320/",
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/374320/library_hero.jpg"
+    },
+    {
+      "file": "doom.jpg",
+      "title": "DOOM Eternal",
+      "page": "https://store.steampowered.com/app/782330/",
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/782330/library_hero.jpg"
+    },
+    {
+      "file": "gta5.jpg",
+      "title": "Grand Theft Auto V",
+      "page": "https://store.steampowered.com/app/271590/",
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/271590/library_hero.jpg"
+    },
+    {
+      "file": "forza5.jpg",
+      "title": "Forza Horizon 5",
+      "page": "https://store.steampowered.com/app/1551360/",
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1551360/library_hero.jpg"
+    },
+    {
+      "file": "nier.jpg",
+      "title": "NieR Automata",
+      "page": "https://store.steampowered.com/app/524220/",
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/524220/library_hero.jpg"
+    },
+    {
+      "file": "hades.jpg",
+      "title": "Hades",
+      "page": "https://store.steampowered.com/app/1145360/",
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1145360/library_hero.jpg"
+    },
+    {
+      "file": "hollowknight.jpg",
+      "title": "Hollow Knight",
+      "page": "https://store.steampowered.com/app/367520/",
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/367520/library_hero.jpg"
+    },
+    {
+      "file": "deathstranding.jpg",
+      "title": "Death Stranding Directors Cut",
+      "page": "https://store.steampowered.com/app/1850570/",
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1850570/library_hero.jpg"
+    }
+  ],
+  "covers": [
+    {
+      "id": "292030",
+      "key": "witcher",
+      "store": "https://store.steampowered.com/app/292030/",
+      "name": "The Witcher 3: Wild Hunt",
+      "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292030/library_600x900.jpg"
+    },
+    {
+      "id": "2215430",
+      "key": "ghost",
+      "store": "https://store.steampowered.com/app/2215430/",
+      "name": "Ghost of Tsushima",
+      "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2215430/library_600x900.jpg"
+    },
+    {
+      "id": "2420110",
+      "key": "horizon",
+      "store": "https://store.steampowered.com/app/2420110/",
+      "name": "Horizon Forbidden West",
+      "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2420110/library_600x900.jpg"
+    },
+    {
+      "id": "1332010",
+      "key": "stray",
+      "store": "https://store.steampowered.com/app/1332010/",
+      "name": "Stray",
+      "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1332010/library_600x900.jpg"
+    },
+    {
+      "id": "1091500",
+      "key": "cyberpunk",
+      "store": "https://store.steampowered.com/app/1091500/",
+      "name": "Cyberpunk 2077",
+      "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091500/library_600x900.jpg"
+    },
+    {
+      "id": "1245620",
+      "key": "eldenring",
+      "name": "ELDEN RING",
+      "store": "https://store.steampowered.com/app/1245620/",
+      "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1245620/library_600x900.jpg"
+    },
+    {
+      "id": "1174180",
+      "key": "reddead",
+      "name": "Red Dead Redemption 2",
+      "store": "https://store.steampowered.com/app/1174180/",
+      "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1174180/library_600x900.jpg"
+    },
+    {
+      "id": "1593500",
+      "key": "godofwar",
+      "name": "God of War",
+      "store": "https://store.steampowered.com/app/1593500/",
+      "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1593500/library_600x900.jpg"
+    },
+    {
+      "id": "2322010",
+      "key": "ragnarok",
+      "name": "God of War Ragnarok",
+      "store": "https://store.steampowered.com/app/2322010/",
+      "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2322010/library_600x900.jpg"
+    },
+    {
+      "id": "990080",
+      "key": "hogwarts",
+      "name": "Hogwarts Legacy",
+      "store": "https://store.steampowered.com/app/990080/",
+      "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/990080/library_600x900.jpg"
+    },
+    {
+      "id": "1817070",
+      "key": "spiderman",
+      "name": "Marvels Spider-Man Remastered",
+      "store": "https://store.steampowered.com/app/1817070/",
+      "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1817070/library_600x900.jpg"
+    },
+    {
+      "id": "1817190",
+      "key": "milesmorales",
+      "name": "Spider-Man Miles Morales",
+      "store": "https://store.steampowered.com/app/1817190/",
+      "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1817190/library_600x900.jpg"
+    },
+    {
+      "id": "1888930",
+      "key": "lastofus",
+      "name": "The Last of Us Part I",
+      "store": "https://store.steampowered.com/app/1888930/",
+      "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1888930/library_600x900.jpg"
+    },
+    {
+      "id": "1659420",
+      "key": "uncharted",
+      "name": "UNCHARTED Legacy of Thieves",
+      "store": "https://store.steampowered.com/app/1659420/",
+      "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1659420/library_600x900.jpg"
+    },
+    {
+      "id": "2050650",
+      "key": "residentevil4",
+      "name": "Resident Evil 4",
+      "store": "https://store.steampowered.com/app/2050650/",
+      "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2050650/library_600x900.jpg"
+    },
+    {
+      "id": "883710",
+      "key": "residentevil2",
+      "name": "Resident Evil 2",
+      "store": "https://store.steampowered.com/app/883710/",
+      "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/883710/library_600x900.jpg"
+    },
+    {
+      "id": "814380",
+      "key": "sekiro",
+      "name": "Sekiro Shadows Die Twice",
+      "store": "https://store.steampowered.com/app/814380/",
+      "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/814380/library_600x900.jpg"
+    },
+    {
+      "id": "374320",
+      "key": "darksouls3",
+      "name": "Dark Souls III",
+      "store": "https://store.steampowered.com/app/374320/",
+      "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/374320/library_600x900.jpg"
+    },
+    {
+      "id": "782330",
+      "key": "doom",
+      "name": "DOOM Eternal",
+      "store": "https://store.steampowered.com/app/782330/",
+      "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/782330/library_600x900.jpg"
+    },
+    {
+      "id": "271590",
+      "key": "gta5",
+      "name": "Grand Theft Auto V",
+      "store": "https://store.steampowered.com/app/271590/",
+      "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/271590/library_600x900.jpg"
+    },
+    {
+      "id": "1551360",
+      "key": "forza5",
+      "name": "Forza Horizon 5",
+      "store": "https://store.steampowered.com/app/1551360/",
+      "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1551360/library_600x900.jpg"
+    },
+    {
+      "id": "524220",
+      "key": "nier",
+      "name": "NieR Automata",
+      "store": "https://store.steampowered.com/app/524220/",
+      "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/524220/library_600x900.jpg"
+    },
+    {
+      "id": "1145360",
+      "key": "hades",
+      "name": "Hades",
+      "store": "https://store.steampowered.com/app/1145360/",
+      "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1145360/library_600x900.jpg"
+    },
+    {
+      "id": "367520",
+      "key": "hollowknight",
+      "name": "Hollow Knight",
+      "store": "https://store.steampowered.com/app/367520/",
+      "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/367520/library_600x900.jpg"
+    },
+    {
+      "id": "1850570",
+      "key": "deathstranding",
+      "name": "Death Stranding Directors Cut",
+      "store": "https://store.steampowered.com/app/1850570/",
+      "coverUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1850570/library_600x900.jpg"
+    }
+  ],
+  "sha256": [
+    {
+      "file": "covers/cyberpunk.jpg",
+      "bytes": 54176,
+      "sha256": "A1573DA17E1DF32341F5F3CB9989FF29CF828015B40C2E312180D7F6E9BE0DBA"
+    },
+    {
+      "file": "covers/darksouls3.jpg",
+      "bytes": 61917,
+      "sha256": "09B7BA76A8527D86DCE4060EB6548B83327FB9E477713CDD54D543149227D5D0"
+    },
+    {
+      "file": "covers/deathstranding.jpg",
+      "bytes": 40757,
+      "sha256": "860719D8F07D3F42F569FE8603848D46F33E8656D96B2C838F252777D1CC8A64"
+    },
+    {
+      "file": "covers/doom.jpg",
+      "bytes": 85479,
+      "sha256": "5462E465DCDB34A71BB14658A8330E08033A42CE157FE7B7295D5EA3A146B0E1"
+    },
+    {
+      "file": "covers/eldenring.jpg",
+      "bytes": 52021,
+      "sha256": "07686E3DF7B0B815EDA6126A2B5186CC84D75FE46A3E452B69BCCD82C8523242"
+    },
+    {
+      "file": "covers/forza5.jpg",
+      "bytes": 61398,
+      "sha256": "AF757AA1EEF45D5DDD84C5D0AD7C6E0765A043C7AE06F2E2B743120F973F51E1"
+    },
+    {
+      "file": "covers/ghost.jpg",
+      "bytes": 50306,
+      "sha256": "37B976330BAA276B4D5D529F3D634BD231A1EA4394C756079E23FF8A3F88510B"
+    },
+    {
+      "file": "covers/godofwar.jpg",
+      "bytes": 49569,
+      "sha256": "18E79ABAD99915219B3E6F25DB75DEEC52B869FAE865740CD51AFE2D72F977A4"
+    },
+    {
+      "file": "covers/gta5.jpg",
+      "bytes": 81961,
+      "sha256": "301CBC71C0265978A6B62EDE653A298559E63C8D96CA88BE20A1885D6189A2D2"
+    },
+    {
+      "file": "covers/hades.jpg",
+      "bytes": 74589,
+      "sha256": "276839B5B89186A26008136ACB43F0F822226EEBF98F1793F50638DE7FC8CD3A"
+    },
+    {
+      "file": "covers/hogwarts.jpg",
+      "bytes": 52260,
+      "sha256": "7FA0DE3B346E799B3C39A92DB6406EDC525341E54237EF1A332206F4FB681DCF"
+    },
+    {
+      "file": "covers/hollowknight.jpg",
+      "bytes": 46633,
+      "sha256": "00BAA017662AD3873B6C92E0FBB7F8D46C952898EEDEEBA24EBEF6605458EFD4"
+    },
+    {
+      "file": "covers/horizon.jpg",
+      "bytes": 77016,
+      "sha256": "6183E72424D24331B994563BB59EB06A9D5B3C7BEE2F74A39FD4438F5869DD3C"
+    },
+    {
+      "file": "covers/lastofus.jpg",
+      "bytes": 43620,
+      "sha256": "75040E580F68A287A75D054040B8240738E6D385CB0BC82E593523F86E24FD5C"
+    },
+    {
+      "file": "covers/milesmorales.jpg",
+      "bytes": 34901,
+      "sha256": "4AC06C8625A77B30090733C4647EB59ACB680F3A8C8A796C9A1237782EA4DFBD"
+    },
+    {
+      "file": "covers/nier.jpg",
+      "bytes": 61203,
+      "sha256": "778294066898C5B7B1E47525F42075A429F62A02E2DF62F1E078840E3D86ECFA"
+    },
+    {
+      "file": "covers/ragnarok.jpg",
+      "bytes": 61062,
+      "sha256": "F53349F7AB3A26030F4EF64B7487E5157AD8CD9CA130B87C93C6292B209824E4"
+    },
+    {
+      "file": "covers/reddead.jpg",
+      "bytes": 75653,
+      "sha256": "F758535316B8402AE5AEEB5FDEA4384594913972F327A8D832DA9F47225D6EDD"
+    },
+    {
+      "file": "covers/residentevil2.jpg",
+      "bytes": 57691,
+      "sha256": "D5CDCB1A26567708C4DF5FC1C351F8B7CAC634C9F4E47225A7743E08EAC7DA69"
+    },
+    {
+      "file": "covers/residentevil4.jpg",
+      "bytes": 34266,
+      "sha256": "2790A676FC4EB2F65682D0DB1A7C02EA4DAE680CEE4B0F90F8DD73B0F8C6044B"
+    },
+    {
+      "file": "covers/sekiro.jpg",
+      "bytes": 43115,
+      "sha256": "7B04FB9FD42E902A6A3AB0DAAAF50FE21A19B611734F962B47DB203CA98A6EC8"
+    },
+    {
+      "file": "covers/spiderman.jpg",
+      "bytes": 44341,
+      "sha256": "968AB863F16AC15E4943617BAF2C61DD1C8B98A699D96E7CBF981D97D0276E05"
+    },
+    {
+      "file": "covers/stray.jpg",
+      "bytes": 12469,
+      "sha256": "93A9C1944E748E467C22B76638E7CF26B2125946E80AB085A2300C3650A70570"
+    },
+    {
+      "file": "covers/uncharted.jpg",
+      "bytes": 44751,
+      "sha256": "D8719263596F34FDA51CD891A90C329637CEA38CB07C4E05356D5CFBA8634E9D"
+    },
+    {
+      "file": "covers/witcher.jpg",
+      "bytes": 55823,
+      "sha256": "B96C5F529CF121B9D27C1C4B2F02F985771770B0494BAF213037CDD4B5BE6449"
+    },
+    {
+      "file": "wallpapers/cyberpunk.jpg",
+      "bytes": 222935,
+      "sha256": "44C73149490ECF4E211E1D7698E457A9694999D5F9B6FFEC136A87C2B720B98B"
+    },
+    {
+      "file": "wallpapers/darksouls3.jpg",
+      "bytes": 279538,
+      "sha256": "695A2F66F740578A784085C6C653D5A6BA60F43FD18D060075C507C5B6B02275"
+    },
+    {
+      "file": "wallpapers/deathstranding.jpg",
+      "bytes": 310197,
+      "sha256": "977E9EE859E358707868336C8A477C97B5E7D04E76E6C58E8E7938D79FAE4948"
+    },
+    {
+      "file": "wallpapers/doom.jpg",
+      "bytes": 461578,
+      "sha256": "E0EF3B261A20BD20EC90CC342A0A50801E925093D777AF8F5B9E8DCEE5C331B8"
+    },
+    {
+      "file": "wallpapers/eldenring.jpg",
+      "bytes": 203966,
+      "sha256": "45CB3B1F7A0542B494466DAC2B40F05250EC4CE633C26752D3F4EF0B9EC2CE03"
+    },
+    {
+      "file": "wallpapers/forza5.jpg",
+      "bytes": 840827,
+      "sha256": "20C67D763E3D1EBACD7E8B83F4EF09962465E5A6B8E40B82A668DF7510BDAFF6"
+    },
+    {
+      "file": "wallpapers/ghost.jpg",
+      "bytes": 175906,
+      "sha256": "076C1F87A7DA3659876D5FF5206D3D2322CC54DFD48E18290C8405ABA08F7F96"
+    },
+    {
+      "file": "wallpapers/godofwar.jpg",
+      "bytes": 243059,
+      "sha256": "A85CCF373079887794FDF19D9D9D18C0C01B3383B18FB282BF3DF0A994C9DFD6"
+    },
+    {
+      "file": "wallpapers/gta5.jpg",
+      "bytes": 330623,
+      "sha256": "9911EACD492474F3F8BD99852458C7B04ABC4C9990DFC72219E7BDC80EA6D5B4"
+    },
+    {
+      "file": "wallpapers/hades.jpg",
+      "bytes": 474286,
+      "sha256": "17A9996DD0835F0E3FED220B002DEB918B33EFCEA2ADDC69E193FFC3E8E5A36B"
+    },
+    {
+      "file": "wallpapers/hogwarts.jpg",
+      "bytes": 317151,
+      "sha256": "AF683F552AAAAFCCA83FD7261B06D3E17B57ABFA7F0ACC22349780702FBE125D"
+    },
+    {
+      "file": "wallpapers/hollowknight.jpg",
+      "bytes": 186926,
+      "sha256": "67B04275BA0A8DB47A27D0CAAD2BCF40693C4041B8A53841934E94D8D7BB8B87"
+    },
+    {
+      "file": "wallpapers/horizon.jpg",
+      "bytes": 300126,
+      "sha256": "7157FEA713D78BC3D4F75728BE5C065E4DB1511BC061E1DBBFF5B291A85EFB70"
+    },
+    {
+      "file": "wallpapers/lastofus.jpg",
+      "bytes": 291962,
+      "sha256": "DB2D66BFEC23E37A12B5DE08837845CED9DCADE36431BD6A95157119EB9052F5"
+    },
+    {
+      "file": "wallpapers/milesmorales.jpg",
+      "bytes": 171903,
+      "sha256": "C046605ECE9CB0EADEDACEE3D7968723C99F5B7AEA0CBAE8524CA5C7FF66BF0B"
+    },
+    {
+      "file": "wallpapers/nier.jpg",
+      "bytes": 371544,
+      "sha256": "B62487B49592A14E68A5F67A5CFB60E7B17B237B8C8F8B6538C3DE65B8DE8EEB"
+    },
+    {
+      "file": "wallpapers/ragnarok.jpg",
+      "bytes": 399090,
+      "sha256": "7CA47ED3B016D4D9A8F0EC95E592CBED0392F2401AD7C0B1F279BE736D17310C"
+    },
+    {
+      "file": "wallpapers/reddead.jpg",
+      "bytes": 370310,
+      "sha256": "793AAFDA602E23169B1C8A20FED00C803AF1AB0BE8F6F7A9E0743A14A469F02B"
+    },
+    {
+      "file": "wallpapers/residentevil2.jpg",
+      "bytes": 292738,
+      "sha256": "AB4A74AD78636CECD4CFC4FCDB90DC395C40DCFB48BD474115648B91ADC49B01"
+    },
+    {
+      "file": "wallpapers/residentevil4.jpg",
+      "bytes": 250815,
+      "sha256": "31E6AB296F5FD1CB0691CC493286BC3CC755108E9A96C6EFC113105499221A63"
+    },
+    {
+      "file": "wallpapers/sekiro.jpg",
+      "bytes": 231315,
+      "sha256": "54AB7C0B610A8A14D72084FB867B6C3BE940CB0486C23EA80BC041879FCCB6FB"
+    },
+    {
+      "file": "wallpapers/spiderman.jpg",
+      "bytes": 143756,
+      "sha256": "23E45717EBACB49BB1F5FA0D942C73030F1285F216704D2CEF1A588EA34F78C6"
+    },
+    {
+      "file": "wallpapers/stray.jpg",
+      "bytes": 213729,
+      "sha256": "5A67FAD8957C3397307E4668FB144FF7063063FAEA1C4689A94CABA39CB4C3A6"
+    },
+    {
+      "file": "wallpapers/uncharted.jpg",
+      "bytes": 313776,
+      "sha256": "96EB86938F6AF4F51A336200B896C0D413F6E8A4C466EEF01B80EE11EF9ED875"
+    },
+    {
+      "file": "wallpapers/witcher.jpg",
+      "bytes": 385684,
+      "sha256": "53BCDBD93DFC40C404CA6F0FB025B87D9111A0C20C6B7011CB1DC66D92150B52"
+    }
+  ]
+}

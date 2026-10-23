@@ -1,0 +1,33 @@
+name: Build and test
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  windows-demo:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: .tools/downloads
+          key: windows-toolchain-${{ hashFiles('config/toolchain.json') }}
+      - name: Set up pinned toolchain
+        shell: pwsh
+        run: ./setup.ps1
+      - name: Build demo APK without third-party game artwork
+        shell: pwsh
+        run: ./build.ps1 -Artwork Demo
+      - name: Test cover allocation and GPS filtering
+        shell: pwsh
+        run: ./test.ps1
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: DriveLite-demo-${{ github.sha }}
+          path: |
+            output/DriveLite.apk
+            output/SHA256SUMS.txt
