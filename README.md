@@ -1,97 +1,104 @@
 # DriveLite Headunit
 
-[![Build and test](https://github.com/adit7494/drivelite-headunit/actions/workflows/build.yml/badge.svg)](https://github.com/adit7494/drivelite-headunit/actions/workflows/build.yml)
-[![License: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
+HU terasa berat? Rapikan aplikasi bawaan dan gunakan launcher ringan dengan favorit, wallpaper, jam, serta kecepatan GPS. **AI mengurus setup PC, build, dan pemasangan.**
 
-Launcher Android native yang ringan untuk head unit mobil, dengan tampilan terinspirasi navigasi konsol: kartu favorit, wallpaper crossfade, jam, dan informasi kecepatan GPS.
+![Tampilan DriveLite di head unit](docs/images/home.png)
 
-**[Mulai dengan AI: setup dan debloat](docs/DEBLOAT.md) · [Unduh APK demo](https://github.com/adit7494/drivelite-headunit/releases/latest) · [Panduan pemasangan](docs/INSTALL.md) · [Build sendiri](docs/BUILD.md) · [Pemulihan](docs/RECOVERY.md)**
+Screenshot memakai artwork game opsional. AI akan membantu memilih artwork saat membangun launcher.
 
-## Cara termudah: minta AI menyiapkan proyek
+## Mulai di sini
 
-1. Buka AI yang bisa membaca folder dan menjalankan terminal di PC Windows.
-2. Ikuti [5 langkah setup dengan AI](docs/DEBLOAT.md): kode Developer options/USB debugging TS7, sambungan Wi-Fi, dan **prompt siap salin**.
-3. AI menyiapkan ADB, membaca aplikasi, lalu memberi rekomendasi beserta dampaknya. **Anda memilih paket dan tindakan sebelum AI mengubahnya.** Pemasangan DriveLite juga dapat dibantu AI.
+Siapkan PC Windows, Wi-Fi/hotspot, dan flashdisk. Lakukan langkah di HU saat mobil terparkir.
 
-![Beranda DriveLite](docs/images/home.png)
+### 1. Pastikan HU kalian tipe TS7
 
-> Screenshot menunjukkan instalasi pribadi dengan artwork game opsional. APK publik memakai 25 cover/wallpaper geometris buatan proyek. Gambar game tidak disertakan dalam repository atau APK demo; sumber dan cara mengunduhnya secara lokal tersedia di [panduan build](docs/BUILD.md#artwork-game-opsional).
+Buka **Settings → About / About Device** pada HU. Cari tulisan **TS7** pada informasi platform atau versi MCU. Unit contoh proyek ini memakai TS7/SL8141E dengan layar 1024 × 600.
 
-## Yang tersedia
+Jika tipenya berbeda, beri tahu AI nanti agar kesesuaiannya diperiksa terlebih dahulu.
 
-- Beranda berisi aplikasi favorit, tersimpan setelah launcher dibuka ulang.
-- 25 slot cover berbeda dan wallpaper pasangannya; pembagian per aplikasi tetap konsisten.
-- Ikon kotak untuk berpindah beranda/semua aplikasi; navigasi kiri, kanan, dan Enter di bawah.
-- Tekan tahan untuk tambah/hapus favorit, info aplikasi, dan konfirmasi uninstall aplikasi pengguna.
-- Jam 24 jam, pencarian, dan pengaturan di kanan atas.
-- GPS kanan bawah dengan indikator hijau/merah; drift 1–2 km/h ditampilkan sebagai 0.
-- Java Android native, tanpa WebView, iklan, service latar, atau izin internet. GPS aktif hanya saat beranda terlihat.
+### 2. Buka Developer options
 
-## Mulai dari sini
+Masuk ke pengaturan Android dan buka **Developer options**. Jika belum muncul, cari **Build number**, lalu ketuk tujuh kali.
 
-| Tujuan | Panduan |
-| --- | --- |
-| Memasang APK lewat flashdisk atau ADB Wi-Fi | [INSTALL.md](docs/INSTALL.md) |
-| Setup/debloat dengan AI, kode TS7, dan prompt siap salin | [DEBLOAT.md](docs/DEBLOAT.md) |
-| Referensi perintah ADB dan pemulihan debloat | [DEBLOAT-MANUAL.md](docs/DEBLOAT-MANUAL.md) |
-| Melihat perubahan dan snapshot memori TS7 pengembang | [DEBLOAT-TS7.md](docs/DEBLOAT-TS7.md) |
-| Mengatur favorit, wallpaper, dan memahami GPS | [USAGE.md](docs/USAGE.md) |
-| Build demo atau artwork game opsional | [BUILD.md](docs/BUILD.md) |
-| Kembali ke launcher bawaan | [RECOVERY.md](docs/RECOVERY.md) |
-| Mengatasi ADB, GPS, atau signature mismatch | [TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) |
-| Menyiapkan rilis berikutnya | [MAINTAINING.md](docs/MAINTAINING.md) |
+Jika meminta kode, masukkan **`7890HH`**. `HH` mengikuti **jam yang tampil di HU**, dua digit dalam format 24 jam, tanpa menit:
 
-## Screenshot
+- HU menunjukkan **18:45** → `789018`.
+- HU menunjukkan **07:30** → `789007`.
 
-### Semua aplikasi
+Setelah masuk, nyalakan tombol **Developer options** jika masih mati.
 
-![Daftar aplikasi dan cover berbeda](docs/images/all-apps.png)
+### 3. Aktifkan USB debugging
 
-### Menu tekan tahan
+Nyalakan **USB debugging**, lalu masukkan password **`john@tw-desktop`**. Ketik huruf kecil, tanpa spasi, lalu tekan **OK**.
 
-![Tambah favorit dan hapus aplikasi](docs/images/app-menu.png)
+<details>
+<summary>Lihat contoh dialog pada HU</summary>
 
-## Quick start untuk build
+![Dialog USB debugging TS7](docs/images/usb-debugging-ts7.jpg)
 
-Windows x64, PowerShell, dan internet diperlukan untuk setup awal. Tidak perlu Android Studio atau Gradle.
+</details>
 
-```powershell
-git clone https://github.com/adit7494/drivelite-headunit.git
-cd drivelite-headunit
-.\setup.ps1
-.\build.ps1 -Artwork Demo
-.\test.ps1
+Kode di atas khusus firmware TS7 yang dibahas di proyek ini. Jika ditolak, minta kode sesuai firmware kepada penjual.
+
+### 4. Hubungkan HU dan PC ke Wi-Fi yang sama
+
+Bisa menggunakan hotspot HP. Buka detail Wi-Fi pada HU dan catat **alamat IP** yang tampil. AI akan menanyakannya nanti.
+
+### 5. Aktifkan sambungan Wi-Fi untuk debugging
+
+Jika belum ada Terminal di HU, unduh [Terminal Emulator dari pengembangnya](https://jackpal.github.io/Android-Terminal-Emulator/downloads/Term.apk) di PC, salin ke flashdisk, lalu pasang di HU.
+
+Buka aplikasi **Terminal di HU**, ketik perintah berikut, lalu tekan Enter:
+
+```sh
+setprop persist.wifi.debug 1
 ```
 
-APK dan checksum ada di `output/`. Untuk tampilan game pada screenshot:
+Jika muncul error, catat atau foto pesannya untuk ditunjukkan kepada AI. AI akan membantu memeriksa cara koneksi yang cocok.
 
-```powershell
-.\download-assets.ps1
-.\build.ps1 -Artwork Original
-```
+### 6. Buka AI di PC
 
-Baca [NOTICE.md](NOTICE.md) untuk batas lisensi artwork. Build menggunakan keystore lokal yang tidak ikut Git. Pertahankan keystore yang sama agar APK dapat diperbarui.
+Buat folder kosong bernama **DriveLite** di PC. Pilih **salah satu** aplikasi di bawah, login, lalu buka folder tersebut:
 
-## Perangkat yang diuji
-
-| Bagian | Hasil |
+| AI yang digunakan | Yang dibuka |
 | --- | --- |
-| Platform | TS7 / `sp7731e_1h10_native` |
-| Android sebenarnya | 8.1.0, API 27 |
-| CPU/ABI | ARMv7 / `armeabi-v7a` |
-| Layar | 1024 × 600 landscape |
-| Versi aplikasi | 2.2, versionCode 4 |
+| **Claude** | Buka aplikasi Claude Desktop → tab **Code** → pilih **Local** dan folder DriveLite. [Petunjuk resmi](https://code.claude.com/docs/en/desktop) |
+| **ChatGPT** | Buka aplikasi ChatGPT desktop → pilih **Codex** → **This computer / Local** → buka folder DriveLite. [Petunjuk resmi](https://learn.chatgpt.com/docs/environments/modes) |
+| **Antigravity** | Buka aplikasi Antigravity → **New Project → Add Folder** → pilih folder DriveLite → mulai percakapan dengan mode **Local**. [Petunjuk resmi](https://antigravity.google/docs/getting-started) |
 
-Manifest mengizinkan API 21+, tetapi pengujian fisik dilakukan pada perangkat di atas. Uji pratinjau sebelum mengganti HOME default pada ROM lain. GPS berasal dari Android, bukan CAN/ECU atau status mesin. Boot/sleep-wake, kamera mundur, radio, dan tombol setir perlu diuji pada kendaraan masing-masing.
+Gunakan mode lokal yang bisa membaca folder dan menjalankan perintah di PC, supaya AI dapat tersambung ke HU.
 
-Installer tidak menghapus launcher OEM, tidak melakukan debloat otomatis, dan tidak memodifikasi MCU/firmware. [Catat HOME lama sebelum menggantinya](docs/RECOVERY.md). Debloat melalui ADB dibahas dalam [panduan terpisah](docs/DEBLOAT.md), termasuk dampak tiap aplikasi, pencatatan status awal, dan pemulihan.
+### 7. Kirim prompt, lalu ikuti percakapan AI
 
-## Pengujian dan kontribusi
+**[Buka file MULAI-DENGAN-AI.txt](MULAI-DENGAN-AI.txt)** atau **[buka versi teks untuk disalin](https://raw.githubusercontent.com/adit7494/drivelite-headunit/main/MULAI-DENGAN-AI.txt)**.
 
-GitHub Actions membangun APK demo, memverifikasi tanda tangan serta zip alignment, menjalankan 14 pemeriksaan pembagian cover/filter GPS, dan menguji collector inventaris dengan ADB simulasi. Tes collector mencakup perangkat belum diotorisasi, kegagalan inventaris, serta pembacaan tambahan yang tidak didukung. Pengujian UI pada head unit dicatat terpisah dan tidak dijalankan oleh CI.
+Salin seluruh isi file, tempel ke percakapan AI, lalu kirim. **Langsung pakai; tidak ada bagian yang perlu diisi atau diedit.**
 
-Perbaikan dan laporan perangkat lain diterima melalui issue/PR. Ikuti [CONTRIBUTING.md](CONTRIBUTING.md), dan hapus data pribadi dari log atau screenshot sebelum mengunggahnya.
+AI akan menanyakan IP HU, memeriksa aplikasi, dan menanyakan fitur yang kalian gunakan. Setelah melihat rekomendasinya, kalian tinggal memilih aplikasi yang ingin dipertahankan atau dinonaktifkan. Setujui dialog **Allow debugging** pada HU jika muncul dari PC kalian.
 
-## Lisensi
+Selanjutnya AI menyiapkan semua alat, membangun launcher, memasangnya melalui Wi-Fi, dan memandu pengujian. **Kalian tidak perlu memasang SDK, menjalankan build, atau menyalin APK launcher sendiri.** Launcher bawaan disimpan untuk pemulihan.
 
-Kode, teks dokumentasi, dan artwork demo: [MIT](LICENSE). Artwork game tetap milik penerbit; tidak termasuk lisensi proyek. DriveLite merupakan proyek independen dan tidak berafiliasi dengan Sony/PlayStation.
+---
+
+<details>
+<summary>Screenshot lainnya</summary>
+
+![Semua aplikasi](docs/images/all-apps.png)
+
+![Menu aplikasi](docs/images/app-menu.png)
+
+</details>
+
+<details>
+<summary>Referensi untuk AI, pemulihan, dan pengembang</summary>
+
+- [Panduan penggunaan](docs/USAGE.md) · [Pemulihan](docs/RECOVERY.md) · [Troubleshooting](docs/TROUBLESHOOTING.md).
+- [Perintah debloat](docs/DEBLOAT-MANUAL.md) · [Catatan hasil TS7](docs/DEBLOAT-TS7.md).
+- [Setup/pemasangan teknis](docs/INSTALL.md) · [Build/artwork](docs/BUILD.md) · [Instruksi AI](AGENTS.md).
+- [APK demo](https://github.com/adit7494/drivelite-headunit/releases/latest) · [GitHub Actions](https://github.com/adit7494/drivelite-headunit/actions) · [Kontribusi](CONTRIBUTING.md) · [Mengelola rilis](docs/MAINTAINING.md).
+- Perangkat yang diuji: TS7, Android 8.1/API 27, ARMv7, 1024 × 600. Angka versi Android pada menu HU dapat berbeda; AI memeriksa versi sebenarnya melalui ADB.
+- Kode menu dan metode Wi-Fi TS7: [laporan pemilik perangkat](https://4pda.to/forum/index.php?showtopic=1028320&st=2480), [contoh koneksi](https://4pda.to/forum/index.php?showtopic=1028320&st=500).
+
+</details>
+
+Kode dan dokumentasi berlisensi [MIT](LICENSE). Artwork game milik penerbit masing-masing; lihat [NOTICE.md](NOTICE.md). DriveLite merupakan proyek independen, tidak berafiliasi dengan Sony/PlayStation.

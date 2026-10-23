@@ -1,0 +1,54 @@
+Saya ingin merapikan aplikasi head unit TS7 dan memasang launcher DriveLite
+melalui PC Windows ini. Tolong kerjakan setup, audit, build, dan instalasinya
+untuk saya, bukan hanya memberikan perintah untuk saya jalankan sendiri.
+
+Proyek: https://github.com/adit7494/drivelite-headunit
+
+Saya sudah mengikuti panduan awal HU. Tidak ada formulir yang perlu saya isi.
+Tanyakan informasi yang dibutuhkan dalam percakapan, satu tahap pada waktunya.
+Gunakan Bahasa Indonesia sederhana dan jangan membanjiri saya dengan istilah teknis.
+
+1. Bekerjalah di folder lokal yang saya buka. Jika proyek belum ada, clone atau
+   unduh ZIP resminya ke subfolder baru, tanpa menimpa file yang sudah ada.
+   Baca AGENTS.md dan dokumen yang relevan. Siapkan ADB dengan setup.ps1
+   -AdbOnly. Pastikan alat benar-benar berjalan di PC ini dan bisa mengakses
+   Wi-Fi HU. Jika sesi hanya cloud/chat tanpa akses PC, bantu beralih ke
+   agent lokal; jangan mengaku dapat menyambung HU dari cloud.
+2. Tanyakan IP HU kepada saya, lalu hubungkan satu serial yang jelas. Jika
+   ada masalah, pandu satu langkah fisik yang diperlukan: Developer options
+   TS7 memakai 7890HH (jam layar HU, dua digit/24 jam), USB debugging memakai
+   john@tw-desktop, dan Terminal HU memakai setprop persist.wifi.debug 1.
+   Dukungan bergantung firmware; jangan menebak password lain atau melakukan reset.
+3. Pastikan ADB berstatus device. Verifikasi tipe perangkat, Android dan user
+   sebenarnya. Jalankan scripts/Inspect-Headunit.ps1. Baca inventaris,
+   metadata paket, proses/memori, HOME, WebView, dan capture-status.json.
+   Tangani pembacaan yang gagal sebelum membuat rekomendasi terkait data itu.
+4. Dari aplikasi yang benar-benar ditemukan, tanyakan fitur yang saya pakai
+   atau tidak saya butuhkan. Contohnya kontak, backup, cuaca, Assistant atau
+   SIM, tetapi jangan menyuruh saya mengisi daftar sebelum audit. Nilai tiap
+   paket berdasarkan fungsi dan bukti, bukan awalan namanya atau daftar ROM lain.
+5. Tampilkan kandidat dalam tabel singkat bernomor: aplikasi/paket, fungsi,
+   status awal, saran pertahankan/nonaktifkan/periksa lagi, dan dampaknya.
+   Tandai informasi yang belum pasti. Simpan inventaris lengkap dalam output/.
+   Setelah saya melihat hasilnya, minta saya memilih aplikasi dan tindakannya.
+   Jangan mengubah paket sebelum pilihan itu jelas, dan jangan meminta ulang
+   persetujuan yang sudah saya berikan untuk tindakan yang sama.
+6. Kerjakan pilihan saya satu per satu, catat status awal dan hasil, lalu
+   siapkan pemulihan. Mulai kandidat opsional dengan nonaktifkan; uninstall
+   hanya untuk pilihan eksplisit dengan dampak data dan cara pemulihan yang
+   jelas. Pertahankan layanan mobil, radio/Bluetooth/kamera/tombol, framework,
+   WebView aktif, dan launcher OEM. Jangan root, factory reset, atau hapus massal.
+7. Selanjutnya bangun dan pasang DriveLite untuk saya. Siapkan toolchain dengan
+   setup.ps1, jalankan build dan test yang diperlukan. Jelaskan singkat pilihan
+   artwork demo atau game opsional sesuai NOTICE.md; tanyakan jika saya belum
+   menentukan tampilannya. Pertahankan keystore lokal yang sama untuk update.
+   Jika sudah ada instalasi dengan tanda tangan berbeda, jangan uninstall
+   diam-diam; jelaskan pilihan pemulihan/data sebelum melanjutkan.
+8. Gunakan scripts/Install.ps1 untuk memasang dan membuka pratinjau; catat
+   HOME lama. Saya tidak perlu build, menyalin APK launcher, atau menjalankan
+   adb install sendiri. Bantu izin GPS, lalu minta saya memeriksa tampilan,
+   radio, Bluetooth, kamera mundur, tombol setir, dan GPS. Setelah pengujian,
+   tanyakan apakah DriveLite dijadikan HOME; simpan launcher OEM untuk kembali.
+9. Akhiri dengan ringkasan singkat, lokasi catatan lokal, cara memulihkan
+   perubahan, dan panduan mematikan debugging. Jangan mengunggah dump perangkat,
+   IP/serial pribadi, keystore, token, atau APK audit ke GitHub.

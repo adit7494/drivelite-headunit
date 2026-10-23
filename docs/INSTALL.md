@@ -2,7 +2,7 @@
 
 [Kembali ke README](../README.md) · [Jika perlu kembali ke launcher lama](RECOVERY.md)
 
-Ingin PC dikerjakan oleh AI? Mulai dari [panduan setup dengan AI dan prompt siap salin](DEBLOAT.md). Dokumen ini menjadi referensi perintah bagi AI atau pengguna yang memilih pemasangan manual.
+Ingin AI mengurus build dan pemasangan? Ikuti [panduan utama dari cek HU sampai membuka AI](../README.md#mulai-di-sini), lalu kirim isi [MULAI-DENGAN-AI.txt](../MULAI-DENGAN-AI.txt). Dokumen ini menjadi referensi teknis bagi AI.
 
 ## 1. Periksa perangkat
 
@@ -89,7 +89,7 @@ Pada TS7 yang dipakai pengembang, firmware juga menerima perintah ini di aplikas
 setprop persist.wifi.debug 1
 ```
 
-Ini cara khusus firmware, bukan perintah universal Android. Jangan menjalankannya di PowerShell PC. Jika muncul `Permission denied`/gagal mengubah properti, pakai metode yang didukung perangkat tersebut. Kode TS7 yang dipakai dalam alur proyek ini: **Developer options `7890HH`** (jam di layar head unit, dua digit/24 jam, tanpa menit; 18:45 → `789018`) dan **USB debugging `john@tw-desktop`** (huruf kecil). Kode tidak universal; lihat [contoh dialog dan sumbernya](DEBLOAT.md#2-aktifkan-debugging-pada-head-unit). Jika ditolak, minta kode sesuai firmware kepada penjual.
+Ini cara khusus firmware, bukan perintah universal Android. Jangan menjalankannya di PowerShell PC. Jika muncul `Permission denied`/gagal mengubah properti, pakai metode yang didukung perangkat tersebut. Kode TS7 yang dipakai dalam alur proyek ini: **Developer options `7890HH`** (jam di layar head unit, dua digit/24 jam, tanpa menit; 18:45 → `789018`) dan **USB debugging `john@tw-desktop`** (huruf kecil). Kode tidak universal; lihat [panduan awal dan contoh dialog](../README.md#3-aktifkan-usb-debugging). Jika ditolak, minta kode sesuai firmware kepada penjual.
 
 Setujui **Allow USB debugging** pada head unit. Lanjutkan setelah `adb devices -l` menampilkan status `device`, bukan `unauthorized`.
 

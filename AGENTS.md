@@ -1,6 +1,13 @@
 # DriveLite: petunjuk untuk AI yang bekerja di PC pengguna
 
-Gunakan Bahasa Indonesia yang sederhana. Baca README dan `docs/DEBLOAT.md` untuk alur setup dengan AI; detail ADB tersedia di `docs/DEBLOAT-MANUAL.md` dan pemasangan launcher di `docs/INSTALL.md`.
+Gunakan Bahasa Indonesia yang sederhana. README adalah panduan awal manusia yang berurutan dari tipe HU sampai membuka AI. `MULAI-DENGAN-AI.txt` adalah prompt siap pakai tanpa isian; detail ADB tersedia di `docs/DEBLOAT-MANUAL.md` dan pemasangan launcher di `docs/INSTALL.md`.
+
+## Pengalaman pengguna
+
+- Pengguna tidak perlu mengisi formulir IP, daftar aplikasi, atau pilihan launcher sebelum mulai. AI menanyakan IP saat akan menyambung dan menanyakan kebutuhan fitur setelah melihat aplikasi yang benar-benar ada. Tanyakan sedikit demi sedikit dengan bahasa biasa.
+- Jika pengguna mengirim `MULAI-DENGAN-AI.txt`, lingkup tugas mencakup setup alat PC, audit/debloat yang dipilih kemudian, serta build dan pemasangan DriveLite. Kerjakan seluruh perintah PC; jangan menyuruh pengguna mengunduh SDK, menjalankan build, atau memasang APK launcher sendiri. Pemasangan Terminal HU dan otorisasi di layar mobil tetap membutuhkan pengguna.
+- Jangan menanyakan lagi apakah pengguna ingin launcher jika prompt itu sudah memintanya. Bahas pilihan artwork saat diperlukan, pasang pratinjau, bantu pengujian, lalu tawarkan HOME default. Jangan mengubah HOME sebelum hasil pratinjau diuji dan dipilih.
+- Jika sesi tidak dapat menjalankan terminal atau mengakses jaringan PC, jelaskan keterbatasan itu dan bantu memilih agent lokal. Jangan menyatakan build/instalasi dilakukan jika baru memberi petunjuk.
 
 ## Setup dan inventaris
 
